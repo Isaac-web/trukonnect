@@ -4,7 +4,11 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
-// import "../public"
+import gridTopRightImg from '../public/assets/hero-section/grid-top-right.jpg';
+import gridMiddleRightImg from '../public/assets/hero-section/grid-middle-right.png';
+import gridMiddleLeftImg from '../public/assets/hero-section/grid-middle-left.jpg';
+import gridBottomRightImg from '../public/assets/hero-section/grid-bottom-right.jpg';
+import gridBottomLeftImg from '../public/assets/hero-section/grid-bottom-left.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,7 +119,7 @@ export function HeroGrid() {
           >
             <Image
               alt=""
-              src={'/assets/card-1-image.png'}
+              src={gridTopRightImg}
               width={200}
               height={200}
               className="h-full w-full object-cover"
@@ -128,7 +132,7 @@ export function HeroGrid() {
           >
             <Image
               alt=""
-              src={'/assets/card-1-image.png'}
+              src={gridMiddleLeftImg}
               width={200}
               height={200}
               className="h-full w-full object-cover"
@@ -142,7 +146,7 @@ export function HeroGrid() {
           >
             <Image
               alt=""
-              src={'/assets/card-1-image.png'}
+              src={gridMiddleRightImg}
               width={200}
               height={200}
               className="h-full w-full object-cover"
@@ -155,7 +159,7 @@ export function HeroGrid() {
           >
             <Image
               alt=""
-              src={'/assets/card-1-image.png'}
+              src={gridBottomLeftImg}
               width={200}
               height={200}
               className="h-full w-full object-cover"
@@ -169,7 +173,7 @@ export function HeroGrid() {
           >
             <Image
               alt=""
-              src={'/assets/card-1-image.png'}
+              src={gridBottomRightImg}
               width={200}
               height={200}
               className="h-full w-full object-cover"
