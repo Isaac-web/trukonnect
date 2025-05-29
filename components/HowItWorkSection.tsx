@@ -3,6 +3,7 @@
 import React, { ReactNode, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -204,9 +205,17 @@ const UnlockPotentialSectionCard = ({
         </div>
       </div>
       <div
-        className="h-[10em] md:h-[12em] lg:h-[14em] bg-white/10 bg-cover bg-center image-container"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      ></div>
+        className="h-[10em] md:h-[12em] lg:h-[14em] bg-white/10"
+        // style={{ backgroundImage: `url(${imageUrl})` }}
+      >
+        <Image
+          width={200}
+          height={200}
+          alt="Logo"
+          src={imageUrl}
+          className="w-full h-full object-cover"
+        />
+      </div>
     </div>
   );
 };

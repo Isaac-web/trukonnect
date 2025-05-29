@@ -12,7 +12,7 @@ export function Hero() {
           src={'/assets/white with name.png'}
           width={100}
           height={60}
-          className="mb-5"
+          className="mb-5 block lg:hidden"
         />
         <h1 className="font-bold text-6xl lg:text-8xl text-center">
           From Scroll to <br /> Rewards
@@ -27,10 +27,10 @@ export function Hero() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 justify-center items-center lg:mt-0 -mt-20 mb-20 lg:mb-0">
-        <button className="bg-[var(--accent)]  text-white text-lg font-semibold py-5 px-10 rounded-xl transition-all duration-300 ease-in-out">
+        <button className="bg-[var(--accent)]  text-white text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out">
           Get Started
         </button>
-        <button className="border-2 border-[var(--accent)]  text-[var(--accent)] text-lg font-semibold py-5 px-10 rounded-xl transition-all duration-300 ease-in-out">
+        <button className="border-2 border-[var(--accent)]  text-[var(--accent)] text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out">
           How it works
         </button>
       </div>
