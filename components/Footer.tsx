@@ -5,7 +5,7 @@ import whilteLogo from '../public/assets/white_no background.png';
 
 import instagramIcon from '../public/icons/instagram.svg';
 import facebookIcon from '../public/icons/facebook.svg';
-import twitterIcon from '../public/icons/twitter.svg';
+import tiktokIcon from '../public/icons/tiktok-icon.svg';
 
 const FooterColumn = ({
   title,
@@ -51,7 +51,7 @@ const Footer = () => {
       href: '#',
     },
     { label: 'info@trukonnect.club', href: 'mailto:info@trukonnect.club' },
-    { label: '+233 20 000 0000', href: 'tel:+233200000000' },
+    { label: '+233 55 726 0016', href: 'tel:+233557260016' },
   ];
 
   return (
@@ -85,7 +85,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6">
             <Link
-              href="https://instagram.com"
+              href="https://www.instagram.com/trukonnect.club/"
               className="text-white/70 hover:text-white transition-colors duration-200 bg-white/80 hover:bg-white w-8 h-8 p-1 rounded-full"
               target="_blank"
               rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://facebook.com"
+              href="https://web.facebook.com/profile.php?id=61573895075653"
               className="text-white/70 hover:text-white transition-colors duration-200 bg-white/80 hover:bg-white w-8 h-8 p-1 rounded-full"
               target="_blank"
               rel="noopener noreferrer"
@@ -113,13 +113,13 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://twitter.com"
-              className="text-white/70 hover:text-white transition-colors duration-200 bg-white/80 hover:bg-white w-8 h-8 p-1 rounded-full"
+              href="https://www.tiktok.com/@trukonnect.club"
+              className="text-white/70 hover:text-white transition-colors duration-200 bg-white/80 hover:bg-white w-8 h-8 p-2 rounded-full"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Image
-                src={twitterIcon}
+                src={tiktokIcon}
                 alt="Twitter"
                 height={100}
                 width={100}
