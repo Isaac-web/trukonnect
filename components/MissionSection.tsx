@@ -47,7 +47,10 @@ const MissionSection = () => {
   };
 
   return (
-    <section className="py-[0em] lg:pb-[5em] px-5 lg:px-0">
+    <section
+      className="py-[0em] lg:pb-[5em] lg:pt-[5em] px-5 lg:px-0"
+      id="mission-statement"
+    >
       <div className="container max-w-4xl mx-auto flex flex-col justify-center items-center">
         <h3 ref={titleRef} className="text-center text-xl font-bold mb-8">
           Our Mission

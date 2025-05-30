@@ -73,7 +73,7 @@ const ChooseYourRoleSection = () => {
               features={[
                 'Complete simple tasks like following, liking and commenting',
                 'Convert tokens to cash via mobile money or bank transfer',
-                'Earn bonus rewards thrugh the referral program',
+                'Join our community to inceease your earning potential',
               ]}
             />
           </div>

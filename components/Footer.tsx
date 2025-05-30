@@ -33,8 +33,8 @@ const FooterColumn = ({
 
 const Footer = () => {
   const quickLinks = [
-    { label: 'About Us', href: '/about' },
-    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'About Us', href: '#mission-statement' },
+    { label: 'How It Works', href: '#how-it-works' },
     { label: 'For Brands', href: '/brands' },
     { label: 'For Users', href: '/users' },
   ];
@@ -50,7 +50,7 @@ const Footer = () => {
       label: '1111 B S Governors Ave STE 28482, Dover, Delaware 19904',
       href: '#',
     },
-    { label: 'info@hqapp.com', href: 'mailto:info@hqapp.com' },
+    { label: 'info@trukonnect.club', href: 'mailto:info@trukonnect.club' },
     { label: '+233 20 000 0000', href: 'tel:+233200000000' },
   ];
 
