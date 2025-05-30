@@ -108,11 +108,11 @@ const FAQSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-white/60">
             Still have questions? We're here to help.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

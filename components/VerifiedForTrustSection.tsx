@@ -12,7 +12,7 @@ const FeatureCard = ({
   iconBgColor: string;
 }) => {
   return (
-    <div className="bg-black/10 backdrop-blur-sm rounded-3xl p-8">
+    <div className="bg-black/10 backdrop-blur-sm rounded-3xl p-8 border-b-2 border-white/10">
       <div
         className={`w-16 h-16 ${iconBgColor} rounded-2xl flex items-center justify-center text-3xl mb-6`}
       >
@@ -55,7 +55,7 @@ const VerifiedForTrustSection = () => {
   ];
 
   return (
-    <section>
+    <section className="py-16 pb-20">
       <div className="container max-w-6xl mx-auto">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">

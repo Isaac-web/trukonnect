@@ -4,9 +4,8 @@ import React, { ReactNode, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
-import card1Image from '../public/assets/new-card-1-image.png';
-import card2Image from '../public/assets/new-card-2-image.png';
-import card3Image from '../public/assets/new-card-3-image.png';
+import engageWithPostImage from '../public/assets/engage-with-post.jpg';
+import cashoutWithEase from '../public/assets/cash-out-with-ease.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,7 +102,7 @@ const HowItWorksSection = () => {
           </div>
           <div className="md:mt-0 lg:-mt-3">
             <UnlockPotentialSectionCard
-              imageUrl="/assets/interact-with.jpg"
+              imageUrl={engageWithPostImage as unknown as string}
               title="Engage With Content"
               content="Browse available opportunities and engage with Instagram profiles through likes, comments, and follows."
               icon={
@@ -121,7 +120,7 @@ const HowItWorksSection = () => {
           </div>
           <div className="md:mt-0 lg:mt-8">
             <UnlockPotentialSectionCard
-              imageUrl="/assets/create-account.jpg"
+              imageUrl={cashoutWithEase as unknown as string}
               title="Earn & Convert"
               content="Earn tokens for each verified engagement. Convert your tokens to cash when you reach the threshold."
               icon={
