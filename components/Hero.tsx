@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { HeroGrid } from './HeroGrid';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -27,9 +28,14 @@ export function Hero() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-5 justify-center items-center lg:mt-0 -mt-20 mb-20 lg:mb-0">
-        <button className="bg-[var(--accent)]  text-white text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out">
-          Get Started
-        </button>
+        <Link
+          href="https://trukonnect.vercel.app/sign-up"
+          className="cursor-pointer"
+        >
+          <button className="bg-[var(--accent)]  text-white text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out">
+            Get Started
+          </button>
+        </Link>
         <button className="border-2 border-[var(--accent)]  text-[var(--accent)] text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out">
           How it works
         </button>

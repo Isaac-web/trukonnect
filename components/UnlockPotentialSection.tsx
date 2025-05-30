@@ -73,7 +73,7 @@ const UnlockPotentialSection = () => {
             title="Unlock Your Influence"
             content="Your voice has power. With Trukonnect, every interaction you make amplifies your influence and opens doors to new opportunities. For brands, this means genuine engagement and measurable growth, all while ensuring authenticity."
             imageUrl="/assets/new-card-2-image.png"
-            backgroundColor="bg-green-300"
+            backgroundColor="bg-green-600"
             iconUrl={keyIcon}
           />
         </div>
@@ -151,7 +151,7 @@ const UnlockPotentialSectionCard = ({
           </div>
 
           <div className="mb-2">
-            <p className="text-white/80 content">{content}</p>
+            <p className="text-white/80 content text-lg">{content}</p>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@ const UnlockPotentialSectionCard = ({
           width={200}
           height={200}
           src={imageUrl}
-          className="w-full object-fill scale-110 card-image -mb-[10em]"
+          className="w-full object-fill scale-110 card-image -mb-[11em]"
         />
       </div>
     </div>

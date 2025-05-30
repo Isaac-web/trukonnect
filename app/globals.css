@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 :root {
+  /* Font families */
+  --font-halyard-display: '';
+  --font-halyard-text: '';
+  --font-halyard-micro: '';
   --background: #000000;
   --foreground: #ffffff;
   --accent: #FF8533;
@@ -12,6 +16,19 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+/* Font family utility classes */
+.font-halyard-display {
+  font-family: var(--font-halyard-display);
+}
+
+.font-halyard-text {
+  font-family: var(--font-halyard-text);
+}
+
+.font-halyard-micro {
+  font-family: var(--font-halyard-micro);
 }
 
 /* Smooth scrolling for the whole page */

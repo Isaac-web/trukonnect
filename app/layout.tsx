@@ -1,12 +1,7 @@
 import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/Footer';
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
+import { halyardDisplay, halyardText, halyardMicro } from './fonts';
 
 export const metadata: Metadata = {
   title: 'Master Gorgeous UI Design',
@@ -21,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} antialiased`}>
+      <body
+        className={`${halyardDisplay.variable} ${halyardText.variable} ${halyardMicro.variable} font-halyard-display antialiased`}
+      >
         {children}
         <Footer />
       </body>
