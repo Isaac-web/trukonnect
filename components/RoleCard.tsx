@@ -1,14 +1,24 @@
 import React from 'react';
 
 interface RoleCardProps {
+  role: 'regular' | 'brand';
   title: string;
   subtitle: string;
   features: string[];
 }
 
-const RoleCard: React.FC<RoleCardProps> = ({ title, subtitle, features }) => {
+const RoleCard: React.FC<RoleCardProps> = ({
+  title,
+  subtitle,
+  features,
+  role,
+}) => {
   return (
-    <div className="relative w-full max-w-[300px] md:max-w-xs backdrop-blur-sm rounded-2xl p-6 md:p-8 bg-white/10 border-2 border-white/10">
+    <div
+      className={`relative w-full max-w-[300px] md:max-w-xs backdrop-blur-sm rounded-2xl p-6 md:p-8 border-2 border-white/10 ${
+        role === 'brand' ? 'bg-blue-500/50' : 'bg-amber-500/60'
+      }`}
+    >
       <h2 className="text-2xl md:text-3xl font-bold mb-2 md:mb-3">{title}</h2>
       <p className="text-sm md:text-base text-white/80 mb-6 md:mb-8">
         {subtitle}

@@ -47,7 +47,7 @@ const ChooseYourRoleSection = () => {
   return (
     <section className="py-[5em] md:py-[8em] lg:py-[10em]">
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="col-span-1 bg-white/10 min-h-[30em] lg:min-h-[40em] px-4 md:px-6">
+        <div className="col-span-1 bg-gradient-to-br from-blue-700/80  to-amber-500/50 min-h-[30em] lg:min-h-[40em] px-4 md:px-6 rounded-none lg:rounded-r-4xl">
           <div className="container max-w-md mx-auto h-full flex flex-col justify-center">
             <h1 className="text-3xl md:text-4xl font-bold text-center lg:text-left">
               Choose Your Role
@@ -68,6 +68,7 @@ const ChooseYourRoleSection = () => {
             className="transform-none lg:transform lg:translate-y-[20px] lg:-rotate-12"
           >
             <RoleCard
+              role="regular"
               title="Regular Users"
               subtitle="Earn tokens by engaging with brands and convert to cash."
               features={[
@@ -82,6 +83,7 @@ const ChooseYourRoleSection = () => {
             className="transform-none lg:transform lg:-translate-y-[60px] lg:-translate-x-[10px] lg:rotate-[10deg]"
           >
             <RoleCard
+              role="brand"
               title="Brand & Celebrities"
               subtitle="Earn tokens by engaging with brands and convert to cash."
               features={[
