@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import { halyardDisplay, halyardText, halyardMicro } from './fonts';
 
 export const metadata: Metadata = {
-  title: 'Master Gorgeous UI Design',
+  title: 'Trukonnect | True fans, Real Rewards',
   description:
-    'Transform your visual design skills with our comprehensive course',
+    "Ghana's first platform that connects real users to real brands. Earn tokens by engaging, and cash out with ease.",
 };
 
 export default function RootLayout({
