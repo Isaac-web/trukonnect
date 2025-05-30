@@ -4,6 +4,9 @@ import React, { ReactNode, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
+import card1Image from '../public/assets/new-card-1-image.png';
+import card2Image from '../public/assets/new-card-2-image.png';
+import card3Image from '../public/assets/new-card-3-image.png';
 
 gsap.registerPlugin(ScrollTrigger);
 

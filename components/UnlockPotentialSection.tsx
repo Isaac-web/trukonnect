@@ -4,6 +4,9 @@ import Image from 'next/image';
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import bookmarkIcon from '../public/icons/bookmark-check.svg';
+import shuffleIcon from '../public/icons/shuffle.svg';
+import keyIcon from '../public/icons/key.svg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -55,20 +58,23 @@ const UnlockPotentialSection = () => {
           <UnlockPotentialSectionCard
             title="Engage & Earn Instantly"
             content="Turn your social media interactions into real cash. Trukonnect makes it simple: follow, like, and comment on content from your favorite brands, and watch your earnings grow. It's engagement that truly pays off."
-            imageUrl="/assets/card-2-image.png"
+            imageUrl={'/assets/new-card-1-image.png'}
+            iconUrl={bookmarkIcon}
             backgroundColor="bg-red-500"
           />
           <UnlockPotentialSectionCard
             title="Connect with Your Favorite Brands"
             content="Discover and interact with authentic brands and celebrities in Ghana. Trukonnect bridges the gap, allowing you to build genuine connections, discover exciting content, and become a valued part of their community."
-            imageUrl="/assets/card-3-image.png"
+            imageUrl={'/assets/new-card-3-image.png'}
             backgroundColor="bg-yellow-600"
+            iconUrl={shuffleIcon}
           />
           <UnlockPotentialSectionCard
             title="Unlock Your Influence"
             content="Your voice has power. With Trukonnect, every interaction you make amplifies your influence and opens doors to new opportunities. For brands, this means genuine engagement and measurable growth, all while ensuring authenticity."
-            imageUrl="/assets/card-1-image.png"
+            imageUrl="/assets/new-card-2-image.png"
             backgroundColor="bg-green-300"
+            iconUrl={keyIcon}
           />
         </div>
       </div>
@@ -80,11 +86,13 @@ const UnlockPotentialSectionCard = ({
   title,
   content,
   imageUrl,
+  iconUrl,
   backgroundColor,
 }: {
   title: string;
   content: string;
   imageUrl: string;
+  iconUrl: string;
   backgroundColor: string;
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -130,7 +138,15 @@ const UnlockPotentialSectionCard = ({
       <div className="p-5 z-50">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="h-10 w-10 rounded-full bg-white/20 icon" />
+            <div className="min-h-10 max-h-10 min-w-10 max-w-10 rounded-full bg-white/20 icon">
+              <Image
+                src={iconUrl}
+                alt="Twitter"
+                height={100}
+                width={100}
+                className="object-contain p-2"
+              />
+            </div>
             <p className="font-bold text-xl text-white/80 title">{title}</p>
           </div>
 
@@ -146,7 +162,7 @@ const UnlockPotentialSectionCard = ({
           width={200}
           height={200}
           src={imageUrl}
-          className="w-full object-fill scale-110 card-image"
+          className="w-full object-fill scale-110 card-image -mb-[10em]"
         />
       </div>
     </div>
