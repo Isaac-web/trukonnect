@@ -40,7 +40,7 @@ const testimonials = [
 const TestimonialsSection = () => {
   return (
     <section className="bg-white/5 py-[8em]">
-      <div className="container max-w-6xl mx-auto mb-16">
+      <div className="container max-w-6xl mx-auto mb-16 px-5 lg:px-0">
         <h3 className="text-4xl font-bold">
           Join over 1,000 users already cashing out!
         </h3>

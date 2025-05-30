@@ -29,13 +29,13 @@ const CallToAction = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
             <a
-              href="/signup"
+              href={'https://trukonnect.vercel.app/sign-up'}
               className="w-full md:w-auto md:min-w-[200px] text-base md:text-lg py-3 md:py-4 px-6 md:px-8 rounded-2xl bg-[var(--accent)] hover:bg-[var(--accent)] transition-colors duration-200 font-medium text-center"
             >
               Create Account →
             </a>
             <a
-              href="/contact"
+              href="https://trukonnect.vercel.app/contact"
               className="w-full md:w-auto md:min-w-[200px] text-base md:text-lg py-3 md:py-4 px-6 md:px-8 rounded-2xl border-2 border-white/20 hover:bg-white/10 transition-colors duration-200 font-medium text-center"
             >
               Contact Us

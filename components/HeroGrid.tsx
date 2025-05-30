@@ -109,7 +109,7 @@ export function HeroGrid() {
   }, []);
 
   return (
-    <div className="hidden  h-[42em] relative -top-20 lg:flex justify-center items-center">
+    <div className="hidden  h-[42em] relative -top-20 lg:flex justify-center items-center ">
       <div className="absolute container max-w-6xl top-0">
         <div className="w-full grid grid-cols-4 gap-5">
           <div
@@ -124,8 +124,23 @@ export function HeroGrid() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="col-span-1 h-[10em] rounded-2xl" />
-          <div className="col-span-1 h-[10em] rounded-2xl" />
+          <div className="col-span-2 h-[10em] rounded-2xl">
+            <div className="flex flex-col lg:flex-row gap-5 justify-center items-center lg:mt-5 -mt-20 mb-20 lg:mb-0 ">
+              <a
+                href="https://trukonnect.vercel.app/sign-up"
+                className="bg-[var(--accent)]  text-white text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out"
+              >
+                Get Started
+              </a>
+              <a
+                href="#how-it-works"
+                className="border-2 border-[var(--accent)]  text-[var(--accent)] text-lg font-semibold py-5 px-10 rounded-2xl transition-all duration-300 ease-in-out"
+              >
+                How it works
+              </a>
+            </div>
+          </div>
+          {/* <div className="col-span-1 h-[10em] rounded-2xl" /> */}
           <div
             ref={topRightRef}
             className="col-span-1 h-[10em] rounded-2xl bg-white/10 scale-90 overflow-hidden"

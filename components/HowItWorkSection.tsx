@@ -54,7 +54,7 @@ const HowItWorksSection = () => {
   }, []);
 
   return (
-    <section className="py-[5em] md:py-[8em] lg:py-[10em]">
+    <section className="py-[5em] md:py-[8em] lg:py-[10em]" id="how-it-works">
       <div className="container max-w-6xl mx-auto px-4 md:px-6 lg:px-10">
         <div className="flex flex-col gap-y-4 md:gap-y-6 lg:gap-y-8 mb-10 md:mb-12 lg:mb-16">
           <h2
